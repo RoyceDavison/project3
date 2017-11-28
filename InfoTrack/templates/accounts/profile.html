@@ -1,0 +1,14 @@
+{% extends 'homepage.html' %}
+{%block head %}
+<title>InfoTrack-Profile</title>
+{% endblock %}
+
+{%block h1%}
+<div class = "container">
+    <p>Profile</p>
+    <p>Username: {{ user }}</p>
+    <p>First name: {{ user.first_name }}</p>
+    <p>Last name: {{ user.last_name }}</p>
+    <p>Email: {{ user.email }}</p>           
+</div>
+{%endblock%}

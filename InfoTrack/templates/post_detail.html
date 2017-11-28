@@ -1,0 +1,18 @@
+
+{% extends "post_base.html" %}
+{% block content %}
+
+<div class="post">
+        {% if post.time %}
+            <div class="date">
+                {{ post.time }}
+            </div>
+        {% endif %}
+      <!--  <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>-->
+      <br>
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.context }}</p>
+    
+    </div>
+
+{% endblock %}
